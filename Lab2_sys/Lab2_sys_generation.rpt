@@ -12,6 +12,8 @@ Progress: Adding onchip_memory2_0 [altera_avalon_onchip_memory2 18.1]
 Progress: Parameterizing module onchip_memory2_0
 Progress: Adding pio_0 [altera_avalon_pio 18.1]
 Progress: Parameterizing module pio_0
+Progress: Adding timer_0 [altera_avalon_timer 18.1]
+Progress: Parameterizing module timer_0
 Progress: Building connections
 Progress: Parameterizing connections
 Progress: Validating
@@ -34,6 +36,8 @@ Progress: Adding onchip_memory2_0 [altera_avalon_onchip_memory2 18.1]
 Progress: Parameterizing module onchip_memory2_0
 Progress: Adding pio_0 [altera_avalon_pio 18.1]
 Progress: Parameterizing module pio_0
+Progress: Adding timer_0 [altera_avalon_timer 18.1]
+Progress: Parameterizing module timer_0
 Progress: Building connections
 Progress: Parameterizing connections
 Progress: Validating
@@ -41,36 +45,41 @@ Progress: Done reading input file
 Info: Lab2_sys.jtag_uart_0: JTAG UART IP input clock need to be at least double (2x) the operating frequency of JTAG TCK on board
 Info: Lab2_sys: Generating Lab2_sys "Lab2_sys" for QUARTUS_SYNTH
 Info: jtag_uart_0: Starting RTL generation for module 'Lab2_sys_jtag_uart_0'
-Info: jtag_uart_0:   Generation command is [exec C:/intelfpga/18.1/quartus/bin64/perl/bin/perl.exe -I C:/intelfpga/18.1/quartus/bin64/perl/lib -I C:/intelfpga/18.1/quartus/sopc_builder/bin/europa -I C:/intelfpga/18.1/quartus/sopc_builder/bin/perl_lib -I C:/intelfpga/18.1/quartus/sopc_builder/bin -I C:/intelfpga/18.1/quartus/../ip/altera/sopc_builder_ip/common -I C:/intelfpga/18.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_jtag_uart -- C:/intelfpga/18.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_jtag_uart/generate_rtl.pl --name=Lab2_sys_jtag_uart_0 --dir=C:/Users/DAMILL~1/AppData/Local/Temp/alt9370_8749359962358704007.dir/0002_jtag_uart_0_gen/ --quartus_dir=C:/intelfpga/18.1/quartus --verilog --config=C:/Users/DAMILL~1/AppData/Local/Temp/alt9370_8749359962358704007.dir/0002_jtag_uart_0_gen//Lab2_sys_jtag_uart_0_component_configuration.pl  --do_build_sim=0  ]
+Info: jtag_uart_0:   Generation command is [exec C:/intelfpga/18.1/quartus/bin64/perl/bin/perl.exe -I C:/intelfpga/18.1/quartus/bin64/perl/lib -I C:/intelfpga/18.1/quartus/sopc_builder/bin/europa -I C:/intelfpga/18.1/quartus/sopc_builder/bin/perl_lib -I C:/intelfpga/18.1/quartus/sopc_builder/bin -I C:/intelfpga/18.1/quartus/../ip/altera/sopc_builder_ip/common -I C:/intelfpga/18.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_jtag_uart -- C:/intelfpga/18.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_jtag_uart/generate_rtl.pl --name=Lab2_sys_jtag_uart_0 --dir=C:/Users/DAMILL~1/AppData/Local/Temp/alt9370_6303367273778778024.dir/0002_jtag_uart_0_gen/ --quartus_dir=C:/intelfpga/18.1/quartus --verilog --config=C:/Users/DAMILL~1/AppData/Local/Temp/alt9370_6303367273778778024.dir/0002_jtag_uart_0_gen//Lab2_sys_jtag_uart_0_component_configuration.pl  --do_build_sim=0  ]
 Info: jtag_uart_0: Done RTL generation for module 'Lab2_sys_jtag_uart_0'
 Info: jtag_uart_0: "Lab2_sys" instantiated altera_avalon_jtag_uart "jtag_uart_0"
 Info: nios2_gen2_0: "Lab2_sys" instantiated altera_nios2_gen2 "nios2_gen2_0"
 Info: onchip_memory2_0: Starting RTL generation for module 'Lab2_sys_onchip_memory2_0'
-Info: onchip_memory2_0:   Generation command is [exec C:/intelfpga/18.1/quartus/bin64/perl/bin/perl.exe -I C:/intelfpga/18.1/quartus/bin64/perl/lib -I C:/intelfpga/18.1/quartus/sopc_builder/bin/europa -I C:/intelfpga/18.1/quartus/sopc_builder/bin/perl_lib -I C:/intelfpga/18.1/quartus/sopc_builder/bin -I C:/intelfpga/18.1/quartus/../ip/altera/sopc_builder_ip/common -I C:/intelfpga/18.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_onchip_memory2 -- C:/intelfpga/18.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_onchip_memory2/generate_rtl.pl --name=Lab2_sys_onchip_memory2_0 --dir=C:/Users/DAMILL~1/AppData/Local/Temp/alt9370_8749359962358704007.dir/0003_onchip_memory2_0_gen/ --quartus_dir=C:/intelfpga/18.1/quartus --verilog --config=C:/Users/DAMILL~1/AppData/Local/Temp/alt9370_8749359962358704007.dir/0003_onchip_memory2_0_gen//Lab2_sys_onchip_memory2_0_component_configuration.pl  --do_build_sim=0  ]
+Info: onchip_memory2_0:   Generation command is [exec C:/intelfpga/18.1/quartus/bin64/perl/bin/perl.exe -I C:/intelfpga/18.1/quartus/bin64/perl/lib -I C:/intelfpga/18.1/quartus/sopc_builder/bin/europa -I C:/intelfpga/18.1/quartus/sopc_builder/bin/perl_lib -I C:/intelfpga/18.1/quartus/sopc_builder/bin -I C:/intelfpga/18.1/quartus/../ip/altera/sopc_builder_ip/common -I C:/intelfpga/18.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_onchip_memory2 -- C:/intelfpga/18.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_onchip_memory2/generate_rtl.pl --name=Lab2_sys_onchip_memory2_0 --dir=C:/Users/DAMILL~1/AppData/Local/Temp/alt9370_6303367273778778024.dir/0003_onchip_memory2_0_gen/ --quartus_dir=C:/intelfpga/18.1/quartus --verilog --config=C:/Users/DAMILL~1/AppData/Local/Temp/alt9370_6303367273778778024.dir/0003_onchip_memory2_0_gen//Lab2_sys_onchip_memory2_0_component_configuration.pl  --do_build_sim=0  ]
 Info: onchip_memory2_0: Done RTL generation for module 'Lab2_sys_onchip_memory2_0'
 Info: onchip_memory2_0: "Lab2_sys" instantiated altera_avalon_onchip_memory2 "onchip_memory2_0"
 Info: pio_0: Starting RTL generation for module 'Lab2_sys_pio_0'
-Info: pio_0:   Generation command is [exec C:/intelfpga/18.1/quartus/bin64/perl/bin/perl.exe -I C:/intelfpga/18.1/quartus/bin64/perl/lib -I C:/intelfpga/18.1/quartus/sopc_builder/bin/europa -I C:/intelfpga/18.1/quartus/sopc_builder/bin/perl_lib -I C:/intelfpga/18.1/quartus/sopc_builder/bin -I C:/intelfpga/18.1/quartus/../ip/altera/sopc_builder_ip/common -I C:/intelfpga/18.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_pio -- C:/intelfpga/18.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_pio/generate_rtl.pl --name=Lab2_sys_pio_0 --dir=C:/Users/DAMILL~1/AppData/Local/Temp/alt9370_8749359962358704007.dir/0004_pio_0_gen/ --quartus_dir=C:/intelfpga/18.1/quartus --verilog --config=C:/Users/DAMILL~1/AppData/Local/Temp/alt9370_8749359962358704007.dir/0004_pio_0_gen//Lab2_sys_pio_0_component_configuration.pl  --do_build_sim=0  ]
+Info: pio_0:   Generation command is [exec C:/intelfpga/18.1/quartus/bin64/perl/bin/perl.exe -I C:/intelfpga/18.1/quartus/bin64/perl/lib -I C:/intelfpga/18.1/quartus/sopc_builder/bin/europa -I C:/intelfpga/18.1/quartus/sopc_builder/bin/perl_lib -I C:/intelfpga/18.1/quartus/sopc_builder/bin -I C:/intelfpga/18.1/quartus/../ip/altera/sopc_builder_ip/common -I C:/intelfpga/18.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_pio -- C:/intelfpga/18.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_pio/generate_rtl.pl --name=Lab2_sys_pio_0 --dir=C:/Users/DAMILL~1/AppData/Local/Temp/alt9370_6303367273778778024.dir/0004_pio_0_gen/ --quartus_dir=C:/intelfpga/18.1/quartus --verilog --config=C:/Users/DAMILL~1/AppData/Local/Temp/alt9370_6303367273778778024.dir/0004_pio_0_gen//Lab2_sys_pio_0_component_configuration.pl  --do_build_sim=0  ]
 Info: pio_0: Done RTL generation for module 'Lab2_sys_pio_0'
 Info: pio_0: "Lab2_sys" instantiated altera_avalon_pio "pio_0"
+Info: timer_0: Starting RTL generation for module 'Lab2_sys_timer_0'
+Info: timer_0:   Generation command is [exec C:/intelFPGA/18.1/quartus/bin64//perl/bin/perl.exe -I C:/intelFPGA/18.1/quartus/bin64//perl/lib -I C:/intelfpga/18.1/quartus/sopc_builder/bin/europa -I C:/intelfpga/18.1/quartus/sopc_builder/bin/perl_lib -I C:/intelfpga/18.1/quartus/sopc_builder/bin -I C:/intelfpga/18.1/quartus/../ip/altera/sopc_builder_ip/common -I C:/intelfpga/18.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_timer -- C:/intelfpga/18.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_timer/generate_rtl.pl --name=Lab2_sys_timer_0 --dir=C:/Users/DAMILL~1/AppData/Local/Temp/alt9370_6303367273778778024.dir/0005_timer_0_gen/ --quartus_dir=C:/intelfpga/18.1/quartus --verilog --config=C:/Users/DAMILL~1/AppData/Local/Temp/alt9370_6303367273778778024.dir/0005_timer_0_gen//Lab2_sys_timer_0_component_configuration.pl  --do_build_sim=0  ]
+Info: timer_0: Done RTL generation for module 'Lab2_sys_timer_0'
+Info: timer_0: "Lab2_sys" instantiated altera_avalon_timer "timer_0"
 Info: avalon_st_adapter: Inserting error_adapter: error_adapter_0
 Info: avalon_st_adapter_001: Inserting error_adapter: error_adapter_0
 Info: avalon_st_adapter_002: Inserting error_adapter: error_adapter_0
 Info: avalon_st_adapter_003: Inserting error_adapter: error_adapter_0
+Info: avalon_st_adapter_004: Inserting error_adapter: error_adapter_0
 Info: mm_interconnect_0: "Lab2_sys" instantiated altera_mm_interconnect "mm_interconnect_0"
 Info: irq_mapper: "Lab2_sys" instantiated altera_irq_mapper "irq_mapper"
 Info: rst_controller: "Lab2_sys" instantiated altera_reset_controller "rst_controller"
 Info: cpu: Starting RTL generation for module 'Lab2_sys_nios2_gen2_0_cpu'
-Info: cpu:   Generation command is [exec C:/intelFPGA/18.1/quartus/bin64//eperlcmd.exe -I C:/intelFPGA/18.1/quartus/bin64//perl/lib -I C:/intelfpga/18.1/quartus/sopc_builder/bin/europa -I C:/intelfpga/18.1/quartus/sopc_builder/bin/perl_lib -I C:/intelfpga/18.1/quartus/sopc_builder/bin -I C:/intelfpga/18.1/quartus/../ip/altera/nios2_ip/altera_nios2_gen2/cpu_lib -I C:/intelfpga/18.1/quartus/../ip/altera/nios2_ip/altera_nios2_gen2/nios_lib -I C:/intelfpga/18.1/quartus/../ip/altera/nios2_ip/altera_nios2_gen2 -I C:/intelfpga/18.1/quartus/../ip/altera/nios2_ip/altera_nios2_gen2 -- C:/intelfpga/18.1/quartus/../ip/altera/nios2_ip/altera_nios2_gen2/generate_rtl.epl --name=Lab2_sys_nios2_gen2_0_cpu --dir=C:/Users/DAMILL~1/AppData/Local/Temp/alt9370_8749359962358704007.dir/0007_cpu_gen/ --quartus_bindir=C:/intelFPGA/18.1/quartus/bin64/ --verilog --config=C:/Users/DAMILL~1/AppData/Local/Temp/alt9370_8749359962358704007.dir/0007_cpu_gen//Lab2_sys_nios2_gen2_0_cpu_processor_configuration.pl  --do_build_sim=0  ]
-Info: cpu: # 2023.01.13 08:24:00 (*) Starting Nios II generation
-Info: cpu: # 2023.01.13 08:24:00 (*)   Checking for plaintext license.
-Info: cpu: # 2023.01.13 08:24:01 (*)   Plaintext license not found.
-Info: cpu: # 2023.01.13 08:24:01 (*)   No license required to generate encrypted Nios II/e.
-Info: cpu: # 2023.01.13 08:24:01 (*)   Elaborating CPU configuration settings
-Info: cpu: # 2023.01.13 08:24:01 (*)   Creating all objects for CPU
-Info: cpu: # 2023.01.13 08:24:02 (*)   Generating RTL from CPU objects
-Info: cpu: # 2023.01.13 08:24:02 (*)   Creating plain-text RTL
-Info: cpu: # 2023.01.13 08:24:02 (*) Done Nios II generation
+Info: cpu:   Generation command is [exec C:/intelFPGA/18.1/quartus/bin64//eperlcmd.exe -I C:/intelFPGA/18.1/quartus/bin64//perl/lib -I C:/intelfpga/18.1/quartus/sopc_builder/bin/europa -I C:/intelfpga/18.1/quartus/sopc_builder/bin/perl_lib -I C:/intelfpga/18.1/quartus/sopc_builder/bin -I C:/intelfpga/18.1/quartus/../ip/altera/nios2_ip/altera_nios2_gen2/cpu_lib -I C:/intelfpga/18.1/quartus/../ip/altera/nios2_ip/altera_nios2_gen2/nios_lib -I C:/intelfpga/18.1/quartus/../ip/altera/nios2_ip/altera_nios2_gen2 -I C:/intelfpga/18.1/quartus/../ip/altera/nios2_ip/altera_nios2_gen2 -- C:/intelfpga/18.1/quartus/../ip/altera/nios2_ip/altera_nios2_gen2/generate_rtl.epl --name=Lab2_sys_nios2_gen2_0_cpu --dir=C:/Users/DAMILL~1/AppData/Local/Temp/alt9370_6303367273778778024.dir/0008_cpu_gen/ --quartus_bindir=C:/intelFPGA/18.1/quartus/bin64/ --verilog --config=C:/Users/DAMILL~1/AppData/Local/Temp/alt9370_6303367273778778024.dir/0008_cpu_gen//Lab2_sys_nios2_gen2_0_cpu_processor_configuration.pl  --do_build_sim=0  ]
+Info: cpu: # 2023.01.13 09:34:56 (*) Starting Nios II generation
+Info: cpu: # 2023.01.13 09:34:56 (*)   Checking for plaintext license.
+Info: cpu: # 2023.01.13 09:34:57 (*)   Plaintext license not found.
+Info: cpu: # 2023.01.13 09:34:57 (*)   No license required to generate encrypted Nios II/e.
+Info: cpu: # 2023.01.13 09:34:57 (*)   Elaborating CPU configuration settings
+Info: cpu: # 2023.01.13 09:34:57 (*)   Creating all objects for CPU
+Info: cpu: # 2023.01.13 09:34:58 (*)   Generating RTL from CPU objects
+Info: cpu: # 2023.01.13 09:34:58 (*)   Creating plain-text RTL
+Info: cpu: # 2023.01.13 09:34:58 (*) Done Nios II generation
 Info: cpu: Done RTL generation for module 'Lab2_sys_nios2_gen2_0_cpu'
 Info: cpu: "nios2_gen2_0" instantiated altera_nios2_gen2_unit "cpu"
 Info: nios2_gen2_0_data_master_translator: "mm_interconnect_0" instantiated altera_merlin_master_translator "nios2_gen2_0_data_master_translator"
@@ -94,6 +103,6 @@ Info: rsp_mux_001: "mm_interconnect_0" instantiated altera_merlin_multiplexer "r
 Info: Reusing file C:/Users/damillion/Documents/TP_ESN/Lab2/Lab2_sys/synthesis/submodules/altera_merlin_arbitrator.sv
 Info: avalon_st_adapter: "mm_interconnect_0" instantiated altera_avalon_st_adapter "avalon_st_adapter"
 Info: error_adapter_0: "avalon_st_adapter" instantiated error_adapter "error_adapter_0"
-Info: Lab2_sys: Done "Lab2_sys" with 27 modules, 39 files
+Info: Lab2_sys: Done "Lab2_sys" with 28 modules, 40 files
 Info: qsys-generate succeeded.
 Info: Finished: Create HDL design files for synthesis
