@@ -5,6 +5,6 @@ module Lab2_sys (
 	reset_reset_n);	
 
 	input		clk_clk;
-	output	[3:0]	pio_data_seg_export;
+	output	[11:0]	pio_data_seg_export;
 	input		reset_reset_n;
 endmodule

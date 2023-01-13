@@ -8,9 +8,9 @@ use IEEE.numeric_std.all;
 
 entity Lab2_sys is
 	port (
-		clk_clk             : in  std_logic                    := '0'; --          clk.clk
-		pio_data_seg_export : out std_logic_vector(3 downto 0);        -- pio_data_seg.export
-		reset_reset_n       : in  std_logic                    := '0'  --        reset.reset_n
+		clk_clk             : in  std_logic                     := '0'; --          clk.clk
+		pio_data_seg_export : out std_logic_vector(11 downto 0);        -- pio_data_seg.export
+		reset_reset_n       : in  std_logic                     := '0'  --        reset.reset_n
 	);
 end entity Lab2_sys;
 
@@ -86,7 +86,7 @@ architecture rtl of Lab2_sys is
 			writedata  : in  std_logic_vector(31 downto 0) := (others => 'X'); -- writedata
 			chipselect : in  std_logic                     := 'X';             -- chipselect
 			readdata   : out std_logic_vector(31 downto 0);                    -- readdata
-			out_port   : out std_logic_vector(3 downto 0)                      -- export
+			out_port   : out std_logic_vector(11 downto 0)                     -- export
 		);
 	end component Lab2_sys_pio_0;
 

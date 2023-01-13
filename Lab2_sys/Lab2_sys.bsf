@@ -41,8 +41,8 @@ https://fpgasoftware.intel.com/eula.
 	(port
 		(pt 0 112)
 		(output)
-		(text "pio_data_seg_export[3..0]" (rect 0 0 103 12)(font "Arial" (font_size 8)))
-		(text "pio_data_seg_export[3..0]" (rect 4 101 154 112)(font "Arial" (font_size 8)))
+		(text "pio_data_seg_export[11..0]" (rect 0 0 106 12)(font "Arial" (font_size 8)))
+		(text "pio_data_seg_export[11..0]" (rect 4 101 160 112)(font "Arial" (font_size 8)))
 		(line (pt 0 112)(pt 144 112)(line_width 3))
 	)
 	(drawing
