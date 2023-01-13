@@ -1,9 +1,6 @@
 library ieee;
 use ieee.std_logic_1164.all;
 
--- TODO:
--- change 7-bit PIO output to 4-bit
-
 entity Lab2 is
 	 port(
         clock, reset : in  std_logic;

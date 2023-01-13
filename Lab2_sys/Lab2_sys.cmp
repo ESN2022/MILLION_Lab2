@@ -1,7 +1,7 @@
 	component Lab2_sys is
 		port (
 			clk_clk             : in  std_logic                    := 'X'; -- clk
-			pio_data_seg_export : out std_logic_vector(6 downto 0);        -- export
+			pio_data_seg_export : out std_logic_vector(3 downto 0);        -- export
 			reset_reset_n       : in  std_logic                    := 'X'  -- reset_n
 		);
 	end component Lab2_sys;
